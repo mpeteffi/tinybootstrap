@@ -1,0 +1,17 @@
+<div data-type="success" th:if="${valid}" class="col-md-offset-1 col-md-10 panel panel-success">
+    <div class="panel-heading result-panel-body">
+        <h1>Success!</h1>
+        <h4 th:text="${'Your project needs only ' + economia + '% of the original CSS rules.'}"></h4>
+        <h4>We take out the unused parts for you.</h4>
+        <h4>Here's your TinyBootstrap:</h4>
+        <br/>
+        <form action="" method="POST">
+            <textarea onClick="this.select();" th:text="${css}" class="form-control" rows="10" placeholder="" required="required"></textarea>
+        </form>
+        <br/>
+        <button type="button" class="btn btn-success copy-btn">Select All!</button>
+    </div>
+</div>  
+<div th:if="${valid}" class="col-md-offset-1 col-md-10 send-div">
+    <button type="button" class="btn btn-primary again-btn"><h4>Do it again!</h4></button>
+</div>

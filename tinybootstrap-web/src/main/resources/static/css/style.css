@@ -1,0 +1,84 @@
+.container{
+    margin-bottom: 20px;
+}
+
+.logo{
+    text-align: center;
+    color: #5a4080;
+    font-weight: bold;
+}
+
+.logo-title{
+    font-size: 80px;
+    letter-spacing: -4.5px;
+    margin-top: 20px;
+}
+
+.logo-subtitle{
+    position: relative;
+    top: -25px;
+    letter-spacing: -2.5px;
+    margin-bottom: 15px;
+}
+
+.panel{
+    padding: 5px;
+}
+
+.panel-body > h3{
+    margin: 0px 0px 20px 10px;
+    font-weight: bold;
+    color: #5a4080;
+}
+
+.panel-body > p{
+    margin: 10px 0px 0px 10px;
+}
+
+.send-div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn, .btn:focus, .btn:hover, .btn:active{
+    background-color: #5a4080;
+    border-color: #5a4080;
+}
+
+.btn > h2{
+    margin: 5px 50px 5px 50px;
+}
+
+.loader-div{
+    height: 60px;
+}
+
+.result-panel-body{
+    text-align: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.panel-text{
+    text-align: center;
+}
+
+footer{
+    margin: 50px 5px 10px 5px;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media (max-width: 550px) {
+    .logo-title {
+        font-size: 45px;
+        letter-spacing: -2.5px;
+    }
+    .logo-subtitle{
+        font-size: 25px;
+        top: -22px;
+        margin-bottom: 10px;
+    }
+}

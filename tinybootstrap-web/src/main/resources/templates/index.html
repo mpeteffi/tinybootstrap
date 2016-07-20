@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TinyBootstrap</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" th:href="@{/css/tinybootstrap.css}"/>
+        <link rel="stylesheet" th:href="@{/css/style.css}"/>
+        <link rel="stylesheet" th:href="@{/css/loading.css}"/>
+        <link rel="shortcut icon" th:href="@{/img/favicon.png}"/>
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <h1 class="logo logo-title">TinyBootstrap</h1>
+            <h1 class="logo logo-subtitle">Remove unused CSS rules</h1>
+            
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Step 1 - Select a Bootstrap version.</h3>
+                        <select id="version-text" name="version" class="form-control" required="required">
+                            <option value="original-bootstrap">Bootstrap Original v3.3.6 (current)</option>
+                            <option value="cerulean-bootswatch">Bootswatch Cerulean</option>
+                            <option value="cosmo-bootswatch">Bootswatch Cosmo</option>
+                            <option value="cyborg-bootswatch">Bootswatch Cyborg</option>
+                            <option value="darkly-bootswatch">Bootswatch Darkly</option>
+                            <option value="flatly-bootswatch">Bootswatch Flatly</option>
+                            <option value="journal-bootswatch">Bootswatch Journal</option>
+                            <option value="lumen-bootswatch">Bootswatch Lumen</option>
+                            <option value="paper-bootswatch">Bootswatch Paper</option>
+                            <option value="readable-bootswatch">Bootswatch Readable</option>
+                            <option value="sandstone-bootswatch">Bootswatch Sandstone</option>
+                            <option value="simplex-bootswatch">Bootswatch Simplex</option>
+                            <option value="slate-bootswatch">Bootswatch Slate</option>
+                            <option value="spacelab-bootswatch">Bootswatch Spacelab</option>
+                            <option value="superhero-bootswatch">Bootswatch Superhero</option>
+                            <option value="united-bootswatch">Bootswatch United</option>
+                            <option value="yeti-bootswatch">Bootswatch Yeti</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Step 2 - Paste your HTML pages.</h3>
+                        <form id="html-form" action="/" method="POST">
+                            <textarea id="html-text" name="html" class="form-control" rows="5" placeholder="Paste here your HTML pages." required="required"></textarea>
+                        </form>
+                        <p>Tip: you can send more than one page at once, just pasting below each other.</p>
+                    </div>
+                </div>
+
+                <div class="send-div">
+                    <button type="button" class="btn btn-primary send-btn"><h2>Tiny it!</h2></button>
+                </div>
+
+                <div class="loader-div hide">
+                    <div class="loader">Loading...</div>
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                
+                <div class="panel panel-default"> 
+                    <div class="panel-body panel-text">
+                        <h3>What</h3>
+                        <p>TinyBootstrap is a tool for removing Bootstrap CSS rules that you are not currently using in your project.</p>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default"> 
+                    <div class="panel-body panel-text">
+                        <h3>Why</h3>
+                        <p>Many web pages use Bootstrap framework, but unusually one of these uses more than a third of their CSS rules. Removing the pieces you don't use makes your project lighter and faster. Try it now!</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <footer>TinyBootstrap is a tool created to assist developers and has no responsibility for any potential damages. Use wisely.</footer>
+        
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script th:src="@{/js/script.js}" type="text/javascript"></script>
+    </body>
+</html>
