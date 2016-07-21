@@ -40,7 +40,7 @@ function cleanContainer(){
 function submitForm(conteudo, vers){
     $.ajax({url:'/', type:'POST', data:{html: conteudo, version: vers}})
         .always(function(res){
-            if(res.includes('data-type="success"')){
+            if(res.indexOf('data-type="success"') > -1){
                 cleanContainer();
                 $('.container').append(res);
             } else {
