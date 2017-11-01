@@ -38,7 +38,7 @@ public class CssService {
         String path = currentDir.getAbsolutePath(); 
         
         if(path.endsWith("app")){
-            path = path + "/mini-web";
+            path = path + "/tinybootstrap-web";
         }
         
         String caminho = path + "/src/main/resources/static/original-css/" + css;
